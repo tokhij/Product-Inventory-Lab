@@ -56,6 +56,23 @@ public class HookahTest {
         Assert.assertEquals(expected, hookah2.getQty());
     }
 
+    @Test // (1)
+    public void constructorTest(){
 
+        // (2)
+        String expectedBrand = "Khalil Mahmoon";
+        Integer expectedSize = 9;
+        Integer expectedQty = 2;
+        Double expectedPrice = 100.00;
+
+        // (3)
+        Hookah testHookah = new Hookah ();
+//expectedBrand, expectedSize, expectedQty, expectedPrice
+        // (4)
+        Assert.assertEquals(expectedBrand, testHookah.getBrand());
+        Assert.assertEquals(expectedSize, testHookah.getSize());
+        Assert.assertEquals(expectedQty, testHookah.getQty());
+        Assert.assertEquals(expectedPrice, testHookah.getPrice());
+    }
 
 }
