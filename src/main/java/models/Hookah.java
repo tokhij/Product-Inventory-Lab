@@ -4,8 +4,8 @@ public class Hookah {
     //declare the variables
     private String brand;
     private Integer size;
-    private int qty;
-    private float price;
+    private Integer qty;
+    private Double price;
 
 
     // set the getters and setters for the variables to be accessible
@@ -20,14 +20,6 @@ public class Hookah {
         return size;
     }
 
-    public int getQty() {
-        return qty;
-    }
-
-    public float getPrice() {
-        return price;
-    }
-
     public void setSize(Integer size) {
         this.size = size;
     }
@@ -36,7 +28,15 @@ public class Hookah {
         this.qty = qty;
     }
 
-    public void setPrice(float price) {
+    public Integer getQty() {
+        return qty;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
         this.price = price;
     }
 
