@@ -56,6 +56,25 @@ public class BubbleTeaTest {
         Assert.assertEquals(expected, bubbleTeaTest.getPrice());
     }
 
+    @Test // (1)
+    public void constructorTest(){
+
+        // (2)
+        String expectedFlavor = "Passion Fruit";
+        String expectedSize = "Medium";
+        Integer expectedQty = 2;
+        Double expectedPrice = 5.00;
+
+        // (3)
+        BubbleTea bubbleTeaTest = new BubbleTea (expectedFlavor, expectedSize, expectedQty, expectedPrice);
+//
+        // (4)
+        Assert.assertEquals(expectedFlavor, bubbleTeaTest.getFlavor());
+        Assert.assertEquals(expectedSize, bubbleTeaTest.getSize());
+        Assert.assertEquals(expectedQty, bubbleTeaTest.getQty());
+        Assert.assertEquals(expectedPrice, bubbleTeaTest.getPrice());
+    }
+
 
 
 }

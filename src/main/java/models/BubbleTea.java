@@ -7,6 +7,16 @@ public class BubbleTea {
     private Integer qty;
     private Double price;
 
+    public BubbleTea(String flavor, String size, Integer qty, Double price) {
+        this.flavor = flavor;
+        this.size = size;
+        this.qty = qty;
+        this.price = price;
+    }
+
+    public BubbleTea(){
+    }
+
 
     public String getFlavor() {
         return flavor;

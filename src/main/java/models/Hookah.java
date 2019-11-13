@@ -8,11 +8,14 @@ public class Hookah {
     private Double price;
 
 
-    public void Hookah(String brand, Integer size, Integer qty, Double price){
+    public Hookah(String brand, Integer size, Integer qty, Double price){
         this.brand = brand;
         this.size = size;
         this.qty = qty;
         this.price = price;
+    }
+
+    public Hookah(){
     }
 
 

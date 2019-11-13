@@ -18,19 +18,6 @@ public class HookahTest {
     }
 
     @Test
-    public void setPriceTest() {
-        // given (1)
-        Double expected = 100.0;
-
-        // when (2)
-        Hookah hookah1 = new Hookah();
-        hookah1.setPrice(expected);
-
-        // then (3)
-        Assert.assertEquals(expected, hookah1.getPrice());
-    }
-
-    @Test
     public void setSizeTest() {
         // given (1)
         Integer expected = 9;
@@ -56,6 +43,19 @@ public class HookahTest {
         Assert.assertEquals(expected, hookah2.getQty());
     }
 
+    @Test
+    public void setPriceTest() {
+        // given (1)
+        Double expected = 100.0;
+
+        // when (2)
+        Hookah hookah1 = new Hookah();
+        hookah1.setPrice(expected);
+
+        // then (3)
+        Assert.assertEquals(expected, hookah1.getPrice());
+    }
+
     @Test // (1)
     public void constructorTest(){
 
@@ -66,8 +66,8 @@ public class HookahTest {
         Double expectedPrice = 100.00;
 
         // (3)
-        Hookah testHookah = new Hookah ();
-//expectedBrand, expectedSize, expectedQty, expectedPrice
+        Hookah testHookah = new Hookah (expectedBrand, expectedSize, expectedQty, expectedPrice);
+//
         // (4)
         Assert.assertEquals(expectedBrand, testHookah.getBrand());
         Assert.assertEquals(expectedSize, testHookah.getSize());
