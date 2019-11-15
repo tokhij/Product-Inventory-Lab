@@ -4,10 +4,24 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class HookahTest {
+
+    @Test
+    public void setIdTest() {
+        // given (1)
+        Integer expected = 1001;
+
+        // when (2)
+        Hookah hookah1 = new Hookah();
+        hookah1.setId(expected);
+
+        // then (3)
+        Assert.assertEquals(expected, hookah1.getId());
+    }
+
     @Test
     public void setBrandTest() {
         // given (1)
-        String expected = "Khalil Mahmoon";
+        String expected = "Khalil Mamoon";
 
         // when (2)
         Hookah hookah1 = new Hookah();
@@ -60,15 +74,17 @@ public class HookahTest {
     public void constructorTest(){
 
         // (2)
-        String expectedBrand = "Khalil Mahmoon";
+        Integer expectedId = 1001;
+        String expectedBrand = "Khalil Mamoon";
         Integer expectedSize = 9;
         Integer expectedQty = 2;
         Double expectedPrice = 100.00;
 
         // (3)
-        Hookah testHookah = new Hookah (expectedBrand, expectedSize, expectedQty, expectedPrice);
+        Hookah testHookah = new Hookah (expectedId, expectedBrand, expectedSize, expectedQty, expectedPrice);
 //
         // (4)
+        Assert.assertEquals(expectedId, testHookah.getId());
         Assert.assertEquals(expectedBrand, testHookah.getBrand());
         Assert.assertEquals(expectedSize, testHookah.getSize());
         Assert.assertEquals(expectedQty, testHookah.getQty());
