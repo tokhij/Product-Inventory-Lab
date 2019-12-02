@@ -2,7 +2,6 @@ package services;
 
 import models.Hookah;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,10 +13,10 @@ public class HookahService {
 
 
 //1. A create method that will accept arguments and return a new Sneaker instance.
-    public Hookah create(String brand, Integer size, Integer qty, Double price) {
+    public Hookah create(String brand, String size) {
 //2. Make a new Sneaker instance and pass the values receive from the line above into the constructor.
         nextId++;
-        Hookah createdHookah = new Hookah(nextId, brand, size, qty, price);
+        Hookah createdHookah = new Hookah(nextId, brand, size);
 //3. Add the new sneaker to the ArrayList to be managed.
         inventory.add(createdHookah);
 //4. Return the new object to the caller.

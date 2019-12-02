@@ -34,7 +34,7 @@ public class HookahTest {
     @Test
     public void setSizeTest() {
         // given (1)
-        Integer expected = 9;
+        String expected = "Small";
 
         // when (2)
         Hookah hookah1 = new Hookah();
@@ -44,18 +44,18 @@ public class HookahTest {
         Assert.assertEquals(expected, hookah1.getSize());
     }
 
-    @Test
-    public void setQtyTest() {
-        // given (1)
-        Integer expected = 3;
-
-        // when (2)
-        Hookah hookah2 = new Hookah();
-        hookah2.setQty(expected);
-
-        // then (3)
-        Assert.assertEquals(expected, hookah2.getQty());
-    }
+//    @Test
+//    public void setQtyTest() {
+//        // given (1)
+//        Integer expected = 3;
+//
+//        // when (2)
+//        Hookah hookah2 = new Hookah();
+//        hookah2.setQty(expected);
+//
+//        // then (3)
+//        Assert.assertEquals(expected, hookah2.getQty());
+//    }
 
     @Test
     public void setPriceTest() {
@@ -76,18 +76,16 @@ public class HookahTest {
         // (2)
         Integer expectedId = 1001;
         String expectedBrand = "Khalil Mamoon";
-        Integer expectedSize = 9;
-        Integer expectedQty = 2;
+        String expectedSize = "Small";
         Double expectedPrice = 100.00;
 
         // (3)
-        Hookah testHookah = new Hookah (expectedId, expectedBrand, expectedSize, expectedQty, expectedPrice);
+        Hookah testHookah = new Hookah (expectedId, expectedBrand, expectedSize);
 //
         // (4)
         Assert.assertEquals(expectedId, testHookah.getId());
         Assert.assertEquals(expectedBrand, testHookah.getBrand());
         Assert.assertEquals(expectedSize, testHookah.getSize());
-        Assert.assertEquals(expectedQty, testHookah.getQty());
         Assert.assertEquals(expectedPrice, testHookah.getPrice());
     }
 

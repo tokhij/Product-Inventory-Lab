@@ -7,8 +7,7 @@ public class Hookah {
     //declare the variables
     private Integer id;
     private String brand;
-    private Integer size;
-    private Integer qty;
+    private String size;
     private Double price;
     List<Hookah> hookahList = new ArrayList<Hookah>();
 
@@ -16,12 +15,11 @@ public class Hookah {
 //    Hookah h2 = new Hookah();
 //    Hookah h3 = new Hookah();
 
-    public Hookah(Integer id, String brand, Integer size, Integer qty, Double price){
+    public Hookah(Integer id, String brand, String size){
         this.id = id;
         this.brand = brand;
         this.size = size;
-        this.qty = qty;
-        this.price = price;
+        this.price = 100.00;
     }
 
     public Hookah() {
@@ -43,20 +41,12 @@ public class Hookah {
         this.brand = brand;
     }
 
-    public Integer getSize() {
+    public String getSize() {
         return size;
     }
 
-    public void setSize(Integer size) {
+    public void setSize(String size) {
         this.size = size;
-    }
-
-    public void setQty(int qty) {
-        this.qty = qty;
-    }
-
-    public Integer getQty() {
-        return qty;
     }
 
     public Double getPrice() {

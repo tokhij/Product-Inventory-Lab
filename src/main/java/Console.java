@@ -2,10 +2,16 @@ public class Console {
 
     public static void printWelcome(){
         System.out.println("" +
-                "**************************************************" +
-                "***              Welcome to                    ***" +
-                "***          Johnny Bravo's Lounge             ***" +
-                "**************************************************");
+                "**************************************************\n" +
+                "***               Welcome to                   ***\n" +
+                "***          Johnny Bravo's Lounge!            ***\n" +
+                "***          ----------------------            ***\n" +
+                "***             Please place your              ***\n" +
+                "***             order down below!              ***\n" +
+                "**************************************************\n");
     }
+
+
+
 
 }
